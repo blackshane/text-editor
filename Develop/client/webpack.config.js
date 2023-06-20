@@ -18,7 +18,13 @@ module.exports = () => {
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
-      
+      new HtmlWebpackPlugin({
+        template: './index.html',
+        title: 'Webpack Plugin' // CHANGE LATER?
+      }),
+      new WebpackPwaManifest({
+        // FOR LATER! name: 'Text Editor' ??
+      }),
     ],
 
     module: {
