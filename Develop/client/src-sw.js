@@ -30,7 +30,7 @@ registerRoute(({ request }) => request.mode === 'navigate', pageCache);
 registerRoute(
     ({ request }) => ['style', 'script', 'worker'].includes(request.destination),
   new CacheFirst({
-    cacheName: 'asset-cache',
+    cacheName: 'assets',
     plugins: [
       new CacheableResponsePlugin({
         statuses: [0, 200],
@@ -46,7 +46,7 @@ registerRoute(
 registerRoute(
   ({ request }) => ['style', 'script', 'worker'].includes(request.destination),
   new offlineFallback({
-    cacheName: 'asset-cache',
+    cacheName: 'offline-asset-cache',
     plugins: [
       new CacheableResponsePlugin({
         statuses: [0, 200],

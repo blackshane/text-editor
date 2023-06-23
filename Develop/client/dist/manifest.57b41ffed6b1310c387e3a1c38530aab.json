@@ -1,0 +1,8 @@
+{
+  "name": "jate",
+  "short_name": "jate",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "Just Another Text Editor"
+}

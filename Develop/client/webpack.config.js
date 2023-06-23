@@ -20,13 +20,27 @@ module.exports = () => {
         template: './index.html',
         title: 'Webpack Plugin' // CHANGE LATER?
       }),
-      new WebpackPwaManifest({
-        // FOR LATER! name: 'Text Editor' ??
-      }),
       new InjectManifest ({
         swSrc: './src-sw.js',
-        swDest: 'service-worker.js',
+        swDest: 'src-sw.js',
       }),
+      new WebpackPwaManifest({
+        name: 'JATE',
+        short_name: 'JATE',
+        description: 'Just Another Text Editor',
+        fingerprints: false,
+        inject: true,
+        publicPath: './',
+        start_url: './',
+        icons: [
+          {
+            src: path.resolve('src/images/logo.png'),
+            sizes: [96, 128, 192, 256, 384, 512],
+            destination: path.join('assets', 'icons'),
+          },
+        ],
+      }),
+
     ],
 
     module: {
