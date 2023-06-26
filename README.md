@@ -2,7 +2,7 @@
   # Text-Editor
   A text-editor that offers offline persistence and is bundled using webpack. This text editor utilizes IndexedDB for data storage. This application can be downloaded and an icon installed on the desktop.
   ## Installation
-  Open https://glacial-brook-21423-c62f95324d3c.herokuapp.com/ in the browser.
+  Open https://glacial-brook-21423-c62f95324d3c.herokuapp.com/git  in the browser.
   ## Usage
   This application is free to use.
   ## Contributions 

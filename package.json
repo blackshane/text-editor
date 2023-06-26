@@ -1,20 +1,26 @@
 {
-  "name": "text-editor",
+  "name": "JATE",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/blackshane/text-editor.git"
+    "start:dev": "concurrently \"cd client && npm run build\" \"cd server && npm run server\" ",
+    "start": "npm run build && cd server && node server.js",
+    "server": "cd server server.js --ignore client",
+    "build": "cd client && npm run build",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "client": "cd client && npm start"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/blackshane/text-editor/issues"
+  "dependencies": {
+    "express": "^4.17.1",
+    "if-env": "^1.0.4"
   },
-  "homepage": "https://github.com/blackshane/text-editor#readme"
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4"
+  }
 }
+ 
