@@ -10,6 +10,8 @@
   ## Testing
   N/A
 
+![image](https://github.com/blackshane/text-editor/assets/122633142/541dab4c-d0e4-4503-90d9-a671d827ee82)
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
