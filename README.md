@@ -10,7 +10,8 @@
   ## Testing
   N/A
 
-![image](https://github.com/blackshane/text-editor/assets/122633142/541dab4c-d0e4-4503-90d9-a671d827ee82)
+## A Screenshot of the deployed application can be viewed here.
+![image](https://github.com/blackshane/text-editor/assets/122633142/3fce4e21-7d16-4c93-b75c-96683d559d36)
 
 ## License
 
